@@ -1,0 +1,80 @@
+2023-10-30 16:23:16,268 - freqtrade - INFO - freqtrade 2023.11-dev-bd243da47
+2023-10-30 16:23:16,269 - freqtrade.configuration.load_config - INFO - Using config: config.json ...
+2023-10-30 16:23:16,269 - freqtrade.loggers - INFO - Verbosity set to 0
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Using additional Strategy lookup path: user_data/strategies/binance/
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20230101-20230930 ...
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Using user-data directory: /home/dshi/Code/Stocks/freqtrade/TSTrader/user_data ...
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Using data directory: /home/dshi/Code/Stocks/freqtrade/TSTrader/user_data/data/binance ...
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Parameter --cache=day detected ...
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20230101-20230930
+2023-10-30 16:23:16,269 - freqtrade.configuration.configuration - INFO - Using freqaimodel class name: NNPredict_NHiTS
+2023-10-30 16:23:16,270 - freqtrade.configuration.configuration - INFO - Using freqaimodel path: user_data/freqaimodels/
+2023-10-30 16:23:16,270 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2023-10-30 16:23:16,273 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2023-10-30 16:23:16,273 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2023-10-30 16:23:16,273 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2023-10-30 16:23:16,274 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2023-10-30 16:23:16,274 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2023-10-30 16:23:16,274 - freqtrade.exchange.exchange - INFO - Using CCXT 4.1.22
+2023-10-30 16:23:16,274 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2023-10-30 16:23:16,277 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2023-10-30 16:23:16,280 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2023-10-30 16:23:18,103 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2023-10-30 16:23:18.250686: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-10-30 16:23:18.277593: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-30 16:23:18.633338: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-10-30 16:23:18,931 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNPredict from '/home/dshi/Code/Stocks/freqtrade/TSTrader/user_data/strategies/binance/NNPredict.py'...
+2023-10-30 16:23:18,931 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2023-10-30 16:23:18,931 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 1m.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'order_types' with value in config file: {'entry': 'limit', 'exit': 'limit', 'emergency_exit': 'market', 'force_exit': 'market', 'force_entry': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False, 'stoploss_price_type': 'last', 'stoploss_on_exchange_interval': 60, 'stoploss_on_exchange_limit_ratio': 0.99}.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 900.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.006}
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1m
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: True
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'emergency_exit': 'market', 'force_exit': 'market', 'force_entry': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False, 'stoploss_price_type': 'last', 'stoploss_on_exchange_interval': 60, 'stoploss_on_exchange_limit_ratio': 0.99}
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 900
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 128
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: True
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2023-10-30 16:23:18,932 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2023-10-30 16:23:18,932 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2023-10-30 16:23:18,935 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/home/dshi/Code/Stocks/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2023-10-30 16:23:18,938 - freqtrade.data.dataprovider - INFO - Increasing startup_candle_count for freqai to 129728
+2023-10-30 16:23:18,939 - freqtrade.data.history.history_utils - INFO - Using indicator startup period: 129728 ...
+2023-10-30 16:23:18,986 - freqtrade.data.history.idatahandler - WARNING - SOL/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,115 - freqtrade.data.history.idatahandler - WARNING - MATIC/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,220 - freqtrade.data.history.idatahandler - WARNING - ADA/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,326 - freqtrade.data.history.idatahandler - WARNING - DOGE/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,439 - freqtrade.data.history.idatahandler - WARNING - LTC/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,550 - freqtrade.data.history.idatahandler - WARNING - LINK/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,658 - freqtrade.data.history.idatahandler - WARNING - ONE/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,773 - freqtrade.data.history.idatahandler - WARNING - ATOM/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,881 - freqtrade.data.history.idatahandler - WARNING - GRT/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:19,989 - freqtrade.data.history.idatahandler - WARNING - ACH/USDT:USDT, futures, 1m, data starts at 2023-02-22 14:30:00
+2023-10-30 16:23:20,081 - freqtrade.data.history.idatahandler - WARNING - DOT/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:20,192 - freqtrade.data.history.idatahandler - WARNING - ALGO/USDT:USDT, futures, 1m, data starts at 2023-01-01 00:00:00
+2023-10-30 16:23:20,299 - freqtrade.optimize.backtesting - INFO - Loading data from 2023-01-01 00:00:00 up to 2023-09-30 00:00:00 (272 days).
+2023-10-30 16:23:20,299 - freqtrade.configuration.timerange - WARNING - Moving start-date by 129728 candles to account for startup time.
+2023-10-30 16:23:20,472 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2023-10-30 16:23:20,473 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy NNPredict
+2023-10-30 16:23:21,796 - freqtrade - ERROR - Impossible to load FreqaiModel 'NNPredict_NHiTS'. This class does not exist or contains Python code errors.
